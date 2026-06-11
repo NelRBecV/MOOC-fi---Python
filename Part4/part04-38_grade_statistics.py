@@ -8,7 +8,7 @@ Exam points and exercises completed: 12 75
 ...
 
 This algorythm is written to take the first two values only.
-If you type in more than two values in the same line, the remaining 
+If you type more than two values in the same line, the remaining 
 data will loss and the output will not be as expected
 
 "Exam points" goes from 0 to 20

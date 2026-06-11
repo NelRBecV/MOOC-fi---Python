@@ -1,17 +1,13 @@
 # Write your solution here
 	def column_correct(sudoku:list,column_no:int):
-	    numbers:list = [1,2,3,4,5,6,7,8,9]
-		blanks:int = 0
+	    numbers:list = [1,2,3,4,5,6,7,8,9]		
 	    
     for n in numbers:
 	        rep:int = 0	        
           for c in range(len(sudoku)):            
 	            if sudoku[c][column_no] == n:
-	                rep+=1
-              elif  sudoku[c][column_no] == 0:
-	                blanks += 1    
-
-              if rep > 1 or blanks > 1:
+	                rep+=1              
+              		if rep > 1:
 	                    return False
 	    
 	    return True

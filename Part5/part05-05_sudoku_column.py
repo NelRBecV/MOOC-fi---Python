@@ -1,6 +1,7 @@
 # Write your solution here
 	def column_correct(sudoku:list,column_no:int):
-	    numbers:list = [1,2,3,4,5,6,7,8,9]   
+	    numbers:list = [1,2,3,4,5,6,7,8,9]
+		blanks:int = 0
 	    
     for n in numbers:
 	        rep:int = 0	        

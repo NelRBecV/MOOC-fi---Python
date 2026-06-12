@@ -1,19 +1,21 @@
 # Write your solution here
 	def sudoku_grid_correct(sudoku:list):
 	    length = len(sudoku)
-	    rows:bool = False; cols:bool = False; block:bool = False
+	    rows:bool = False
+		cols:bool = False
+		block:bool = False
     
 	    for l in range(length):
 	        rows = row_correct(sudoku,l)
 	        cols = column_correct(sudoku,l)
-	        if rows == False or cols ==False:
+	        if not rows or not cols:
 	            return False
 	    
       squares:list = [0,3,6]	  
       for sl in squares:
 	        for sh in squares:
 	            block = block_correct(sudoku,sl,sh)
-	            if block == False:
+	            if not block:
 	                return False    
 	    else:
 	        return True
